@@ -1,0 +1,19 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>request</title>
+</head>
+<body>
+        
+              <div>
+                <form action="requesting" method="POST">
+                    {% csrf_token %}
+                <input type="text" name="tool" placeholder="name"><br>
+                <input type="number" name="amt" placeholder="quantity">
+                <input type="submit" value="request">
+                </form>
+              </div>
+</body>
+</html>

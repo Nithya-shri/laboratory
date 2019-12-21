@@ -1,0 +1,39 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/physics.css' %}" >
+    <title>components</title>
+</head>
+<body>
+    <a href="req">request for component</a>
+    <a href="requestdetails">my request</a>
+    <a href="studenthomepage">back</a>
+        <table class="content-table">
+                <thead>
+                  <tr>
+                    <th>Name</th>
+                    <th>quantity available</th>
+                    
+                  </tr>
+                </thead>
+                <tbody>
+                    {% for tool in tool %}
+                  <tr>
+                    
+                    <td>{{tool.name}}</td>
+                    <td>{{tool.available_now}}</td>
+                
+    
+                  </tr>
+                  {% endfor %}
+                 
+                </tbody>
+              </table>
+              <div>
+    
+</body>
+</html>

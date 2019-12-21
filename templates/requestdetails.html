@@ -1,0 +1,36 @@
+{% load static %}
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="{% static 'css/physics.css' %}" >
+
+    </head>
+    <body>
+            <table class="content-table">
+                    <thead>
+                      <tr>
+                        <th>Tool</th>
+                        <th>quantity requested</th>
+                        <th>status</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                        {% for g in g %}
+
+                        
+
+                      <tr>
+                        
+                        <td>{{g.tool}}</td>
+                        <td>{{g.quantity_req}}</td>
+                        <td>{{g.status}}</td>
+        
+                      </tr>
+                      {% endfor %}
+                      <a href="studentphysics">back</a>
+                     
+                    </tbody>
+                  </table>
+                  <div>
+        
+    </body>
+</html>

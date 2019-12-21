@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>login</title>
+    </head>
+    <body>
+        <form action="studentlogin" method="POST">
+            {% csrf_token %}
+            <input type="text" placeholder="username" name="username" required><br>
+            <input type="password" placeholder="password" name=password required><br>
+            <button>login</button>
+        </form>
+        <h1>{{mess}}</h1>
+        <a href="studentregister">register</a>
+    </body>
+</html>

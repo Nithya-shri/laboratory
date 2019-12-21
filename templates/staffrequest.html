@@ -1,0 +1,53 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/physics.css' %}" >
+    <title>components</title>
+</head>
+<body>
+    
+    
+    <a href="staff">back</a>
+        <table class="content-table">
+                <thead>
+                  <tr>
+                    <th>Name</th>
+                    
+                    <th>component Name</th>
+                    <th>quantity available</th>
+                    <th>quantity requested</th>
+                    <th>status</th>
+                  </tr>
+                </thead>
+                <tbody>
+                    {% for m in m %}
+            
+                  <tr>
+                    
+                    <td>{{m.name.firstname}}</td>
+                    <td><a>{{m.tool}}</a></td>
+                    <td>{{m.toolname.available_now}}</td>
+                    <td>{{m.quantity_req}}</td>
+                    <td><button  >{{m.status}}</button></td>
+                
+                    {% endfor %}
+                    
+
+                
+    
+                  
+                 
+                </tbody>
+              </table>
+              <div>
+        <script>
+        
+        </script>
+            
+    
+</body>
+</html>

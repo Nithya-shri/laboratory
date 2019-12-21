@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>registration</title>
+    </head>
+    <body>
+         <form action="studentregister" method="POST">
+             {% csrf_token %}
+             <input type="text" placeholder="first name" name="firstname" required><br>
+             <input type="text" placeholder="last name" name="lastname" required><br>
+             <input type="text" placeholder="rollno" name="rollno" required><br>
+             <input type="text" placeholder="department" name="department" required><br>
+             <input type="number" placeholder="year" name="year" required><br>
+             <input type="number" placeholder="phone number" name="phone" required><br>
+             <input type="text" placeholder="hostel/dayschoolar" name="hs" required><br>
+             <input type="text" placeholder="city" name="city" required><br>
+             <input type="number" placeholder="parent phone number" name="pphone" required><br>
+             <input type="password" placeholder="password" name="password1" required><br>
+             <input type="password" placeholder="re enter password" name="password2" required><br>
+             <h1>{{mess}}</h1>
+             <button>register</button>
+         </form>
+         <a href="studentlogin">login</a>
+
+
+
+
+
+             
+         </form>
+    </body>
+</html>
